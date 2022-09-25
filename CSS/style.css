@@ -271,7 +271,8 @@ button{
     }
 }
 
-/*End Portfolio section*/
+/*End About section*/
+/*Start Portfolio section*/
 .portfolio{
     background: url(../Images/Proto-bkg.jpg);
     background-size: cover;
@@ -335,3 +336,71 @@ button{
 .portfolio-container video{
     width: 100%;
 }
+/*End Portfolio section*/
+/*Start Price section*/
+.price .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.price .card{
+    background-color: white;
+    box-shadow: 5px 4px 10px rgba(69, 67, 67, 0.206), -5px -3px 10px rgba(69, 67, 67, 0.206);
+    padding: 50px 30px 20px 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price .card h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.price .card hr{
+    margin: 15px auto;
+    width: 70%;
+    background-color: #5d585e8e;
+    height: 0.1px;
+}
+.price .card li{
+    text-align: center;
+}
+.price .card span{
+    color: rgb(131, 12, 135);
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+.price .card a{
+
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+}
+.price .card button{
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 200px;
+    background: var(--primary-color);
+    color: #efefef;
+    font-size: 17px;
+    border-radius: 35px;
+    transition: 0.3s;
+    border: none;
+}
+.price .card button:hover{
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border: none;
+    letter-spacing: 2px;
+    box-shadow: 5px 4px 10px rgba(69, 67, 67, 0.206), -5px -3px 10px rgba(69, 67, 67, 0.206);
+    font-size: 22px;
+}
+/*End Price section*/
+/*Start Contact section*/
+.contact{
+    background: var(--primary-color);
+    color: #fff;
+}
+/*End Contact section*/
