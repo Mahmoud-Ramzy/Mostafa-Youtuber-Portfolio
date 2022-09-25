@@ -162,7 +162,8 @@ button{
     border-radius: 50%;
     margin-top:-90px;
     margin-left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-20px) translateX(-50%);
+    animation: UpDown 2s ease-in-out 0s infinite both;
 }
 
 .services .card h2{
@@ -402,9 +403,63 @@ button{
 }
 /*End Price section*/
 /*Start Contact section*/
+.contact .main-heading p{
+    margin-bottom: 0;
+}
 .contact{
     background: var(--primary-color);
     color: #fff;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
+}
+.social-links{
+    display: flex;
+    padding: 150px 0 150px;
+    font-size: 50px;
+    justify-content: space-around;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+}
+.contact a{
+    color: white;
+    transition: 0.4s;
+    transform: rotate(0deg);
+    animation: Spin 7s ease-in-out infinite  both; 
+}
+.contact .t:hover{
+    color: rgb(6, 185, 240);
+}
+.contact .l:hover{
+    color:#0961B8;
+}
+.contact .w:hover{
+    color:#1ACC3E;
+}
+.contact .f:hover{
+    color:#375197;
+}
+.contact .i{
+    border-radius: 50%;
+}
+.contact .i:hover{
+    color: rgba(156, 27, 237, 0.744);
+    /* background: linear-gradient(33deg, rgba(255,252,0,1) 0%, rgba(121,27,9,1) 30%, rgba(118,9,121,1) 60%); */
 }
 /*End Contact section*/
+/*Start Animation*/
+@keyframes UpDown {
+    50%{
+        transform:translateY(-50px) translateX(-50%);
+    }
+}
+@keyframes Spin {
+    0%{
+        transform:rotate(0deg);
+    }
+    70%{transform:rotate(360deg);}
+    100%{transform:rotate(360deg);}
+}
+/*End Animation*/
